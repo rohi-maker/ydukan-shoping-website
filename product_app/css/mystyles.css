@@ -1,0 +1,17 @@
+.nav-bar-itmes{
+  font-weight: bold;
+}
+.nav-bar-itmes:hover{
+  color: white;
+  background-color: #2E3840;
+  border-radius: 10%;
+}
+.dropdown-hover:hover{
+  color: white;
+  background-color: #2E3840;
+}
+.product-image{
+  width: 205px;
+  height: 140px;
+  margin-top: 15px;
+}
