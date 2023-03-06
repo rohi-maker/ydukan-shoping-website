@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YDukaan-Cart</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cabin&family=Merriweather&family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyles.css">
+  </head>
+
+  <body>
+    <nav class="navbar  navbar-expand-md bg-white fixed-top border bottom">
+      <a href="/index.html" class="navbar-brand ms-2"
+        ><img
+          src="images/online-shop.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top me-2"
+          alt="brand-image"
+        />YDukaan</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item ms-2 "><a href="#" class="nav-link nav-bar-itmes">Fashion</a></li>
+          <li class="nav-item ms-2 "><a href="posts.html" class="nav-link nav-bar-itmes">Gadgets</a></li>
+          <li class="nav-item ms-2 "><a href="#" class="nav-link nav-bar-itmes">Men</a></li>
+          <li class="nav-item ms-2 "><a href="#" class="nav-link nav-bar-itmes">Women</a></li>
+          <li class="nav-item ms-2 "><a href="#" class="nav-link nav-bar-itmes">Boys</a></li>
+          <li class="nav-item ms-2"><a href="#" class="nav-link nav-bar-itmes">Watches</a></li>
+          <li class="nav-item dropdown ms-lg-4">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item dropdown-hover" href="#">Cloths</a>
+              <a class="dropdown-item dropdown-hover" href="#">Smartphones</a>
+              <a class="dropdown-item dropdown-hover" href="#">Headphones</a>
+              <a class="dropdown-item dropdown-hover" href="#">Grocery</a>
+              <a class="dropdown-item dropdown-hover" href="#">Lehangaas</a>
+            </div>
+          </li>
+          <li class="nav-item ms-lg-5"><a href="/account.html" class="nav-link nav-bar-itmes">Account</a></li>
+          <li class="nav-item ms-2"><a href="/cart.html" class="nav-link nav-bar-itmes">Cart</a></li>
+        </ul>
+        <form action="#" class="form-inline ms-lg-5">
+          <input type="text" class="form-control " placeholder="Search Product" />
+        </form>
+        <button class="btn btn-dark ms-md-2">Search</button>
+        <button class="btn btn-danger mx-auto">Logout</button>
+      </div>
+    </nav>
+
+    <div class="mt-5 pt-2"> <!-- div that contains all the products of cart-->
+    <!--FIRST PRODUCT IN CART-->
+    <div class="d-flex flex-row mt-2">
+       <div class="col-sm-2"> <!-- div for image -->
+        <div class="mt-4" style="width: 250px; height: 160px;">
+            <img src="images/product1.jpg" class="container-fluid" style='height: 100%; width: 100%; object-fit: contain'/>
+        </div> 
+       </div>
+       <div class="col-sm-10 border rounded pb-2 me-2 " style="background-color: #EDF1D6;"> <!-- div for product information -->
+           <h4 class="ms-3 mt-4"><strong>Boat Wireless Headphones</strong></h4>
+           <p class="ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id minima aperiam molestiae repudiandae laborum, excepturi quibusdam deserunt iure hic?</p>
+           <br>
+           <h3 class="ms-3 mt-2" ><strong>Rs. 500.00</strong></h3>
+           <button class="btn btn-dark ms-3 mt-2 px-4">Order</button> 
+           <button class="btn btn-danger ms-3 mt-2 px-3">Remove</button> 
+           
+        </div>        
+    </div>
+
+    <!--SECOND PRODUCT IN CART-->
+    <div class="d-flex flex-row mt-2" >
+        <div class="col-sm-2"> <!-- div for image -->
+         <div class="mt-4 " style="width: 250px; height: 160px;">
+             <img src="images/186.jpg" class="container-fluid responsive" style='height: 100%; width: 100%; object-fit: contain'/>
+         </div> 
+        </div>
+        <div class="col-sm-10 border rounded pb-2 me-2 " style="background-color: #EDF1D6;"> <!-- div for product information -->
+            <h4 class="ms-3 mt-4"><strong>Casio GSHOCK watch</strong></h4>
+            <p class="ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id minima aperiam molestiae repudiandae laborum, excepturi quibusdam deserunt iure hic?</p>
+            <br>
+            <h3 class="ms-3 mt-2" ><strong>Rs. 500.00</strong></h3>
+            <button class="btn btn-dark ms-3 mt-2 px-4">Order</button> 
+            <button class="btn btn-danger ms-3 mt-2 px-3">Remove</button> 
+            
+         </div>        
+     </div>
+
+     <div class="d-flex flex-row mt-2" >
+        <div class="col-sm-2"> <!-- div for image -->
+         <div class="mt-4 " style="width: 250px; height: 160px;">
+             <img src="images/elegant-watch-with-silver-golden-chain-isolated.jpg" class="container-fluid responsive" style='height: 100%; width: 100%; object-fit: contain'/>
+         </div> 
+        </div>
+        <div class="col-sm-10 border rounded pb-2 me-2 " style="background-color: #EDF1D6;"> <!-- div for product information -->
+            <h4 class="ms-3 mt-4"><strong>Casio GSHOCK watch</strong></h4>
+            <p class="ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id minima aperiam molestiae repudiandae laborum, excepturi quibusdam deserunt iure hic?</p>
+            <br>
+            <h3 class="ms-3 mt-2" ><strong>Rs. 500.00</strong></h3>
+            <button class="btn btn-dark ms-3 mt-2 px-4">Order</button> 
+            <button class="btn btn-danger ms-3 mt-2 px-3">Remove</button> 
+            
+         </div>        
+     </div>
+
+     <div class="d-flex flex-row mt-2" >
+        <div class="col-sm-2"> <!-- div for image -->
+         <div class="mt-4 " style="width: 250px; height: 160px;">
+             <img src="images/elegant-watch-with-silver-golden-chain-isolated.jpg" class="container-fluid responsive" style='height: 100%; width: 100%; object-fit: contain'/>
+         </div> 
+        </div>
+        <div class="col-sm-10 border rounded pb-2 me-2 " style="background-color: #EDF1D6;"> <!-- div for product information -->
+            <h4 class="ms-3 mt-4"><strong>Casio GSHOCK watch</strong></h4>
+            <p class="ms-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id minima aperiam molestiae repudiandae laborum, excepturi quibusdam deserunt iure hic?</p>
+            <br>
+            <h3 class="ms-3 mt-2" ><strong>Rs. 500.00</strong></h3>
+            <button class="btn btn-dark ms-3 mt-2 px-4">Order</button> 
+            <button class="btn btn-danger ms-3 mt-2 px-3">Remove</button> 
+            
+         </div>        
+     </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
