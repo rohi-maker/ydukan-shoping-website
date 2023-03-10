@@ -24,6 +24,9 @@ getProductById().then((productResponse)=>{ // now modify the view to represent t
     for(let i in productResponse.characteristics){
         feature_list.innerHTML=feature_list.innerHTML+"<li>"+productResponse.characteristics[i]+"</li>"
     }
+    let product_details=document.getElementById("product_details");
+    product_details.classList.add("lead")
+    product_details.lastElementChild.textContent=productResponse.productDetails
 
 },(error)=>{
     console.log("THERE IS SOME ERROR");

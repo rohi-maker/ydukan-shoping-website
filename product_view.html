@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Product View</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -9,117 +9,181 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cabin&family=Merriweather&family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/mystyles.css">
-</head>
-<body>
-    <nav class="navbar  navbar-expand-md bg-white fixed-top border bottom">
-        <a href="#" class="navbar-brand ms-2"
-          ><img
-            src="images/online-shop.png"
-            width="30"
-            height="30"
-            class="d-inline-block align-top me-2"
-            alt="brand-image"
-          />YDukaan</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item ms-2 "><a href="#" class="nav-link nav-bar-itmes">Fashion</a></li>
-            <li class="nav-item ms-2 "><a href="posts.html" class="nav-link nav-bar-itmes">Gadgets</a></li>
-            <li class="nav-item ms-2 "><a href="#" class="nav-link nav-bar-itmes">Men</a></li>
-            <li class="nav-item ms-2 "><a href="#" class="nav-link nav-bar-itmes">Women</a></li>
-            <li class="nav-item ms-2 "><a href="#" class="nav-link nav-bar-itmes">Boys</a></li>
-            <li class="nav-item ms-2"><a href="#" class="nav-link nav-bar-itmes">Watches</a></li>
-            <li class="nav-item dropdown ms-lg-4">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Categories
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item dropdown-hover" href="#">Cloths</a>
-                <a class="dropdown-item dropdown-hover" href="#">Smartphones</a>
-                <a class="dropdown-item dropdown-hover" href="#">Headphones</a>
-                <a class="dropdown-item dropdown-hover" href="#">Grocery</a>
-                <a class="dropdown-item dropdown-hover" href="#">Lehangaas</a>
-              </div>
-            </li>
-            <li class="nav-item ms-lg-5"><a href="/account.html" class="nav-link nav-bar-itmes">Account</a></li>
-            <li class="nav-item ms-2"><a href="/cart.html" class="nav-link nav-bar-itmes">Cart</a></li>
-          </ul>
-          <form action="#" class="form-inline ms-lg-5">
-            <input type="text" class="form-control " placeholder="Search Product" />
-          </form>
-          <button class="btn btn-dark ms-md-2">Search</button>
-          <button class="btn btn-danger mx-auto">Logout</button>
-          
-        </div>
-      </nav>
-      <div class="d-flex flex-row ">
-
-        <div id="carouselExampleIndicators" class="carousel slide col-md-5 col-sm-6 border ms-2 me-2 " style="margin-top: 70px;" data-ride="carousel">
-            
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100 p-image" src="" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 p-image" src="" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 p-image" src="" alt="Third slide">
-              </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Cabin&family=Merriweather&family=Pacifico&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/mystyles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-white fixed-top border bottom">
+      <a href="/index.html" class="navbar-brand ms-2"
+        ><img
+          src="images/online-shop.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top me-2"
+          alt="brand-image"
+        />YDukaan</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item ms-2">
+            <a href="#" class="nav-link nav-bar-itmes">Fashion</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a href="posts.html" class="nav-link nav-bar-itmes">Gadgets</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a href="#" class="nav-link nav-bar-itmes">Men</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a href="#" class="nav-link nav-bar-itmes">Women</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a href="#" class="nav-link nav-bar-itmes">Boys</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a href="#" class="nav-link nav-bar-itmes">Watches</a>
+          </li>
+          <li class="nav-item dropdown ms-lg-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item dropdown-hover" href="#">Cloths</a>
+              <a class="dropdown-item dropdown-hover" href="#">Smartphones</a>
+              <a class="dropdown-item dropdown-hover" href="#">Headphones</a>
+              <a class="dropdown-item dropdown-hover" href="#">Grocery</a>
+              <a class="dropdown-item dropdown-hover" href="#">Lehangaas</a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" style=" text-decoration: none;" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
-              <span class="sr-only btn btn-dark me-4"><</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" style="text-decoration: none;" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only btn btn-dark">></span>
-            </a>
+          </li>
+          <li class="nav-item ms-lg-5">
+            <a href="/account.html" class="nav-link nav-bar-itmes">Account</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a href="/cart.html" class="nav-link nav-bar-itmes">Cart</a>
+          </li>
+        </ul>
+        <form action="#" class="form-inline ms-lg-5">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search Product"
+          />
+        </form>
+        <button class="btn btn-dark ms-md-2">Search</button>
+        <button class="btn btn-danger mx-auto">Logout</button>
+      </div>
+    </nav>
+    <div class="d-flex flex-row">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide col-md-5 col-sm-6 border ms-2 me-2"
+        style="margin-top: 70px"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 p-image" src="" alt="First slide" />
           </div>
-
-
-        <div class="col-md-7 col sm-6" id="info-div" style="margin-top: 70px; background-color: #EDF1D6;"> <!-- DIV FOR PRODUCT DETAILS-->
-            <h4 class="display-6 ms-2 mt-2"><strong>{Boat Wireless Headphones Model-MS5}</strong> </h4> <!-- PRODUCT NAME-->
-            <p id="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum commodi dignissimos ipsum laboriosam ut quam.</p> <!-- PRODUCT TAGLINE -->
-            <h5 class="display-6 ms-2"><strong>Features</strong></h5>
-            <ul id="features-list">
-                <!-- <li >Best for gaming</li>
-                <li >Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
-                <li >Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
-                <li >Lorem, ipsum dolor sit amet consectetur adipisicing.</li> -->
-            </ul>
-            <h4 class="ms-3 mt-4"><strong>Price: <strike>500.0</strike> - 450.0</strong></h4>
+          <div class="carousel-item">
+            <img class="d-block w-100 p-image" src="" alt="Second slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 p-image" src="" alt="Third slide" />
+          </div>
         </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          style="text-decoration: none"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon bg-dark border rounded" aria-hidden="true"></span>
+          
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          style="text-decoration: none"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon bg-dark border rounded" aria-hidden="true"></span>
+          
+        </a>
       </div>
 
-      <div class="d-flex-flex-row container mt-5">
-          <button class="btn btn-dark col-sm-3">Buy Now</button>
-          <button class="btn btn-dark col-sm-3 offset-1">Add to cart</button>
-          <button class="btn btn-dark col-sm-3 offset-1">View more</button>
+      <div
+        class="col-md-7 col sm-6"
+        id="info-div"
+        style="margin-top: 70px; background-color: #edf1d6"
+      >
+        <!-- DIV FOR PRODUCT DETAILS-->
+        <h4 class="display-6 ms-2 mt-2"><strong>{Product Name}</strong></h4>
+        <!-- PRODUCT NAME-->
+        <p id="product-description">{Product Description}</p>
+        <!-- PRODUCT TAGLINE -->
+        <h5 class="display-6 ms-2"><strong>Features</strong></h5>
+        <ul id="features-list"></ul>
+        <h4 class="ms-3 mt-4">
+          <strong>Price: <strike>500.0</strike> - 450.0</strong>
+        </h4>
       </div>
-      <!-- alert div below -->
-      <div class="alert alert-info mt-2" style="height: 70px; ">
-        <strong>GET 200 RUPEES CASHBACK</strong> on buying any 3 products of Boat.<a href="#">Click here to view similar products.</a>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="margin-left: 450px;">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>  
-      <script
+    </div>
+    <div class="alert alert-info mt-2" style="height: 70px">
+      <strong>GET 200 RUPEES CASHBACK</strong> on buying any 3 products of
+      Boat.<a href="#">Click here to view similar products.</a>
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+        style="margin-left: 450px"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div id="product_details" class="border rounded mt-3">
+      <h4 class="mt-2 text-white bg-black ps-5" style="font-weight: bold">
+        Product Details
+      </h4>
+      <p class="mx-3 my-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellat iusto facilis. Error nobis tenetur ad aperiam laborum? Vel nobis quae soluta dolorem mollitia. Commodi ad nihil adipisci facilis amet in impedit excepturi, labore veniam, omnis libero distinctio cumque quo animi enim aliquid laudantium facere iusto nisi saepe nobis ipsa eveniet modi molestiae? Dolor incidunt dolorum at asperiores quis labore reprehenderit quas culpa qui beatae! Exercitationem aliquam ratione blanditiis repudiandae delectus, atque ullam ducimus facere sapiente id dolore molestiae laudantium natus saepe optio eos vitae libero sed fugiat perferendis. Porro sit, enim sint praesentium atque animi minima. Sequi, vitae ducimus?
+      </p>
+    </div>
+
+    <div class="d-flex-flex-row container mt-4 mb-2">
+      <button class="btn btn-dark col-sm-3">Buy Now</button>
+      <button class="btn btn-dark col-sm-3 offset-1">Add to cart</button>
+      <button class="btn btn-dark col-sm-3 offset-1">View more</button>
+    </div>
+    <!-- alert div below -->
+    
+    <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
@@ -130,5 +194,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/product_view.js"></script>
-</body>
+  </body>
 </html>
