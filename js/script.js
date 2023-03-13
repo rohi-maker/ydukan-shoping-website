@@ -4,11 +4,14 @@ let user_id;
 for (const [key, value] of urlParams) {
     user_id=value;
 }
+
 if(user_id != undefined){
     let button_container=document.getElementById("signup-signin-button-container")
     button_container.removeChild(document.getElementById("signup"))
     button_container.removeChild(document.getElementById("signin"))
     account_link.href="/account.html?user_id="+user_id
+    let cart_link=document.getElementById("go-to-cart")
+    cart_link.href="/cart.html?user_id="+user_id
 }
 const getAllProducts= async ()=>{
       let allProducts = await fetch("http://localhost:9090/allproducts",{method : "GET"});  
