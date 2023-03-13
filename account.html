@@ -74,37 +74,37 @@
     <div style="margin-top: 60px;">
        <div class="d-flex flex-row">
         <div class="col-sm-8 mt-3">
-            <h1 class="mt-4 ps-3 display-1 ms-3  me-3 bg-dark border rounded text-white" style="font-family: 'Oswald', sans-serif;"><bold>Shivay Sharma</bold></h1>
-            <h5 class="ms-4">Email ID: sanwalrohit333@gmail.com</h5>
+            <h1 class="mt-4 ps-3 display-1 ms-3  me-3 bg-dark border rounded text-white" style="font-family: 'Oswald', sans-serif;"><bold id="name-view">Shivay Sharma</bold></h1>
+            <h5 class="ms-4" id="email-view">Email ID: sanwalrohit333@gmail.com</h5>
             <h5 class="ms-3 mt-5 text-white bg-dark ps-3 me-3 pt-2 pb-2 rounded">Living address</h5>
-            <p class="lead border rounded mt-2 ms-3 me-3">
+            <p class="lead border rounded mt-2 ms-3 me-3" id="address-view">
                 Near shiv mandir Village - Azizpur adda dist. Pathankot on gharota road.
                 Landmark - Near shiv mandir. Main road - Gharota. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ullam porro repellat beatae possimus reiciendis.
             </p>
             <div class="d-flex flex-row ms-3 mt-5">
                 <div class="col-sm-6">
                     <h5 class="text-white bg-dark ps-3 me-3 pt-2 pb-2 rounded">First Mobile Number</h5>
-                     <h5 class="border rounded mt-2 ms-1 me-3 ps-2">+91-7341135856</h5>
+                     <h5 class="border rounded mt-2 ms-1 me-3 ps-2" id="mobile-view">+91-7341135856</h5>
                 </div>
                 <div class="col-sm-6">
                     <h5 class="text-white bg-dark ps-3 me-3 pt-2 pb-2 rounded">Second Mobile Number</h5>
-                     <h5 class="border rounded mt-2 ms-1 me-3 ps-2">+91-7341135856</h5>
+                     <h5 class="border rounded mt-2 ms-1 me-3 ps-2" id="second-mobile-view">+91-7341135856</h5>
                 </div>
             </div>
             <div class="d-flex flex-row ms-3 mt-5">
                 <div class="col-sm-6">
                     <h5 class="text-white bg-dark ps-3 me-3 pt-2 pb-2 rounded">Pin code</h5>
-                     <h5 class="border rounded mt-2 ms-1 me-3 ps-2">145025</h5>
+                     <h5 class="border rounded mt-2 ms-1 me-3 ps-2" id="pin-view">145025</h5>
                 </div>
                 <div class="col-sm-6">
                     <h5 class="text-white bg-dark ps-3 me-3 pt-2 pb-2 rounded">District</h5>
-                     <h5 class="border rounded mt-2 ms-1 me-3 ps-2">Pathankot</h5>
+                     <h5 class="border rounded mt-2 ms-1 me-3 ps-2" id="city-view">Pathankot</h5>
                 </div>
 
             </div>
-            <div class="d-flex flex-row ms-3 mt-5">
-                <button class="btn btn-dark col-sm-5 mx-3">CHANGE ADDRESS</button>
-                <button class="btn btn-dark col-sm-5 offset-1">UPDATE DETAILS</button>
+            <div class="d-flex flex-row ms-3 mt-5 mb-4">
+                <button class="btn btn-dark col-sm-5 mx-3">ADD ADDRESS</button>
+                <button class="btn btn-dark col-sm-5 offset-1" onclick="updateUserDetails()">UPDATE DETAILS</button>
             </div>
         </div>
         <div class="col-sm-4 mt-5 ">
@@ -123,6 +123,6 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-
+    <script src="js/account.js"></script>
   </body>
 </html>

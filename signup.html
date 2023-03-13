@@ -5,7 +5,7 @@
     <title>YDukaan - SignUp</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
+      rel="stylesheet" 
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
@@ -20,8 +20,11 @@
 <body style="background-color: #ECF2FF;">
     
     <div class="container">
-    <div class="border rounded border-success border-info" style="margin-top: 100px; background-color: #EDF1D6">
-        <h4 class="mt-1 display-4" style="text-align: center;
+    <div class="border rounded border-success border-info" id="form-container" style="margin-top: 10px; background-color: #EDF1D6">
+        <!-- <div class="alert alert-danger mt-3 mx-2" id="invalid-input-alert">
+            SIGNUP FAILURE
+        </div> -->
+        <h4 class="display-4" style="text-align: center;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
         ">User Signup</h4>
         <form action="#" class="mb-4">
@@ -30,7 +33,7 @@
                     <label  for="name" class="ms-4" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: large;">Enter Your Name</label>
                 </div>
                 <div class="justify-content-center">
-                <input type="text" id="username" name="username" class="form-control mx-auto border rounded border-info" style="width: 80%;">
+                <input type="text" required id="username" name="username" class="form-control mx-auto border rounded border-info" style="width: 80%;">
                 </div>
             </div>
             <div class="form-group mt-3">
@@ -38,7 +41,7 @@
                     <label  for="email" class="ms-4" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: large;">Enter Your Email</label>
                 </div>
                 <div class="justify-content-center">
-                <input type="email" id="email" name="email" class="form-control mx-auto border rounded border-info" style="width: 80%;">
+                <input type="email" required id="email" name="email" class="form-control mx-auto border rounded border-info" style="width: 80%;">
                 </div>
             </div>
             <div class="form-group mt-3">
@@ -46,7 +49,7 @@
                     <label  for="mobile" class="ms-4" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: large;">Enter Mobile Number</label>
                 </div>
                 <div class="justify-content-center">
-                <input type="text" id="mobile" name="mobile" class="form-control mx-auto border rounded border-info" style="width: 80%;">
+                <input type="text" id="mobile" required name="mobile" class="form-control mx-auto border rounded border-info" style="width: 80%;">
                 </div>
             </div>
 
@@ -56,7 +59,7 @@
                     <label  for="password" class="ms-4" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: large;">Create a Password</label>
                 </div>
                 <div class="justify-content-center">
-                <input type="password" id="password" name="password" class="form-control mx-auto border rounded border-info" style="width: 80%;">
+                <input type="password" id="password" required name="password" class="form-control mx-auto border rounded border-info" style="width: 80%;">
                 </div>
             </div>
 
@@ -66,11 +69,11 @@
                     <label  for="mobile" class="ms-4" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: large;">Re-Type Password</label>
                 </div>
                 <div class="justify-content-center">
-                <input type="password" id="reconfirm-password" name="password" class="form-control mx-auto border rounded border-info" style="width: 80%;">
+                <input type="password" required id="reconfirm-password" name="password" class="form-control mx-auto border rounded border-info" style="width: 80%;">
                 </div>
             </div>
 
-            <button class="btn-dark btn offset-3 mt-3 w-50" onclick="doSignUp()" id="signup-button">Sign Up</button>
+            <button class="btn-dark btn offset-3 mt-3 w-50" onclick="doSignUp()" type="button" id="signup-button">Sign Up</button>
         </form>
     </div>
     <div class="mt-2 d-flex flex-row container">

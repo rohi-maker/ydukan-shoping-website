@@ -1,8 +1,15 @@
-// let product_row=document.createElement("div");
-// let product_row_class_list=["d-flex","flex-row","border","border-dark","pb-3"]
-// for(item in product_row_class_list){
-//     product_row.classList.add(item);
-// }
+const urlParams = new URLSearchParams(location.search)
+let account_link=document.getElementById("account-link")
+let user_id;
+for (const [key, value] of urlParams) {
+    user_id=value;
+}
+if(user_id != undefined){
+    let button_container=document.getElementById("signup-signin-button-container")
+    button_container.removeChild(document.getElementById("signup"))
+    button_container.removeChild(document.getElementById("signin"))
+    account_link.href="/account.html?user_id="+user_id
+}
 const getAllProducts= async ()=>{
       let allProducts = await fetch("http://localhost:9090/allproducts",{method : "GET"});  
       let productsResponse= await allProducts.json();
@@ -91,22 +98,13 @@ getAllProducts().then((value)=>{
         all_product_blocks[i].lastElementChild.appendChild(product_heading.cloneNode());
         all_product_blocks[i].lastElementChild.firstElementChild.appendChild(strong.cloneNode());
         all_product_blocks[i].lastElementChild.firstElementChild.firstElementChild.appendChild(product_link.cloneNode());
-<<<<<<< HEAD
-        all_product_blocks[i].lastElementChild.firstElementChild.firstElementChild.firstElementChild=allData[i].name;
-        all_product_blocks[i].lastElementChild.appendChild(product_small.cloneNode());
-        all_product_blocks[i].lastElementChild.getElementsByTagName("small")[0].textContent=allData[i].tagline;
-        all_product_blocks[i].lastElementChild.appendChild(add_cart_button.cloneNode());
-        all_product_blocks[i].lastElementChild.lastElementChild.textContent="Add to cart"
-        all_product_blocks[i].lastElementChild.lastElementChild.href="/cart.html"
-=======
         all_product_blocks[i].lastElementChild.firstElementChild.firstElementChild.firstElementChild.textContent=allData[i].name;
         all_product_blocks[i].lastElementChild.firstElementChild.firstElementChild.firstElementChild.href="/product_view.html?id="+allData[i].id;
         all_product_blocks[i].lastElementChild.appendChild(product_small.cloneNode());
         all_product_blocks[i].lastElementChild.getElementsByTagName("small")[0].textContent=allData[i].tagline;
         all_product_blocks[i].lastElementChild.appendChild(add_cart_button.cloneNode());
         all_product_blocks[i].lastElementChild.getElementsByClassName("to-cart-button")[0].textContent="Add to cart"
-        all_product_blocks[i].lastElementChild.getElementsByClassName("to-cart-button")[0].href="/cart.html"
->>>>>>> 0f065dd3ab1701f8391e602f5b2e8ee911278a63
+        all_product_blocks[i].lastElementChild.getElementsByClassName("to-cart-button")[0].href="/cart.html?product_id="+allData[i].id+"&user_id="+user_id
         all_product_blocks[i].lastElementChild.appendChild(product_price.cloneNode());
     }
     for(let item in myProductRows){

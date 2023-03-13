@@ -13,20 +13,20 @@ const getProductById=async()=>{
 getProductById().then((productResponse)=>{ // now modify the view to represent the product charactersticks
     let carousel_items=document.getElementsByClassName("p-image");
     for(let i in carousel_items){
-        carousel_items[i].src="images/"+productResponse.image_id;
+        carousel_items[i].src="images/"+productResponse.data.image_id;
     }
     let info_div=document.getElementById("info-div");
-    info_div.firstElementChild.firstElementChild.textContent=productResponse.name;
+    info_div.firstElementChild.firstElementChild.textContent=productResponse.data.name;
     let product_description=document.getElementById("product-description");
     product_description.classList.add("ms-2")
-    product_description.textContent=productResponse.description;
+    product_description.textContent=productResponse.data.description;
     let feature_list=document.getElementById("features-list")
-    for(let i in productResponse.characteristics){
-        feature_list.innerHTML=feature_list.innerHTML+"<li>"+productResponse.characteristics[i]+"</li>"
+    for(let i in productResponse.data.characteristics){
+        feature_list.innerHTML=feature_list.innerHTML+"<li>"+productResponse.data.characteristics[i]+"</li>"
     }
     let product_details=document.getElementById("product_details");
     product_details.classList.add("lead")
-    product_details.lastElementChild.textContent=productResponse.productDetails
+    product_details.lastElementChild.textContent=productResponse.data.productDetails
 
 },(error)=>{
     console.log("THERE IS SOME ERROR");
