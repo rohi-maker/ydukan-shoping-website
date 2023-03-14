@@ -16,7 +16,7 @@ const doAlert = (message)=>{
 }
 let responseFromApi;
 class UserRequest{
-    constructor(id,name,email,firstMobile,password,secondMobile,pin,district,livingAddresses){
+    constructor(id,name,email,firstMobile,password,secondMobile,pin,district,livingAddresses,cart){
         this.id=id;
         this.name=name;
         this.email=email;
@@ -26,12 +26,15 @@ class UserRequest{
         this.pin=pin
         this.district=district
         this.password=password
+        this.cart=cart;
     }
 }
 const updateUser=async ()=>{
       let addressList=[]
+      let cartProducts=[]
       addressList.push(document.getElementById("address-bar").value)
-      let updateRequest=new UserRequest(responseFromApi.data.id,responseFromApi.data.name,responseFromApi.data.email,responseFromApi.data.firstMobile,responseFromApi.data.password,document.getElementById("second-mobile").value,document.getElementById("pin-code").value,document.getElementById("city-bar").value,addressList)
+      cartProducts=responseFromApi.data.cart
+      let updateRequest=new UserRequest(responseFromApi.data.id,responseFromApi.data.name,responseFromApi.data.email,responseFromApi.data.firstMobile,responseFromApi.data.password,document.getElementById("second-mobile").value,document.getElementById("pin-code").value,document.getElementById("city-bar").value,addressList,cartProducts)
       let responseAfterUpdate=await fetch("http://localhost:9090/update/user",
         {
           method : "PUT",
